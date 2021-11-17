@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>TAMU ECEN CAPSTON PROJECT MANAGER</title>
+	
+	</header>
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../chosen.jquery.min.js"></script>
+	<link href="../chosen.min.css" rel="stylesheet">
+	
+	<script type="text/javascript" language= "javascript">
+		$(Document).ready(Function(){
+			%(".chosen-select").chosen()
+		});
+
+	</script>
+	<style>
+		h2 {
+			color: maroon;
+			font-size: 27pt;
+			font-style: oblique 90deg;
+			text-align: center;
+			
+		}
+
+		h1 {
+			color: rgb(0, 0, 0);
+			font-size: 24pt;
+			text-align: center;
+            margin: 0 auto;
+			top:10%;
+		}
+
+		p {
+			font-family: "Sans-serif", Helvetica, sans-serif, "text-shadow"10px 10px 2px rgb(0, 0, 0);
+			color:rgb(0, 0, 0);
+		}
+
+		.navbar-custom {
+			background-color: maroon;
+		}
+
+		.navbar-custom,
+		.navbar-custom  {
+			color: rgb(255, 255, 255);
+			font-size: 25pt;
+			font-style: oblique 45deg;
+			text-align: center;
+			position: fixed;
+			top:0%;
+			left:0;
+		}
+
+		.navbar-brand{
+			color: rgb(255, 255, 255);
+			font-size: 27pt;
+			font-style: oblique 45deg;
+			text-align: center;
+			position: relative;			
+		}
+
+		.center {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		
+		
+
+
+		#submit {
+			display: block;
+			color: rgb(255, 255, 255);
+			background-color: maroon;
+			border: 2px solid black;
+			border-radius: 5em;
+			width: 7em;
+			height: 3em;
+			position: relative;
+			margin: 0 auto;
+			left: 150px;
+			margin-block-end: -5%;
+
+		}
+
+
+
+		
+
+		input[type=text],
+		input[type=password] {
+			width: 350px;
+			display: block;
+			border: 4px black;
+            position: fixed;
+            
+			background: #f1f1f1;
+		}
+
+		/* Add a background color when the inputs get focus */
+		input[type=text]:focus,
+		input[type=password]:focus {
+			background-color: #ddd;
+			outline: none;
+			margin: 0 auto
+		}
+        html{
+            height:100%;
+            margin: auto;
+            width: 910px;
+            overflow:auto;
+        }
+		/* Set a style for all buttons */
+		
+		
+
+		/* Extra styles for the cancel button */
+		.cancelbtn {
+			padding: 14px 20px;
+			background-color: #f44336;
+		}
+
+		/* Float cancel and signup buttons and add an equal width */
+		.cancelbtn,
+		.signupbtn {
+			float: left;
+			width: 50%;
+		}
+
+		/* Add padding to container elements */
+		.container {
+			padding: 10px;
+		}
+
+		/* The Modal (background) */
+		
+
+		/* Style the horizontal ruler */
+		hr {
+			border: 1px solid #f1f1f1;
+			margin-bottom: 25px;
+		}
+
+		
+
+		
+
+		
+
+		.label {
+			position: relative;
+		}
+		
+		/* Change styles for cancel button and signup button on extra small screens */
+		@media screen and (max-width: 300px) {
+
+			.cancelbtn,
+			.signupbtn,
+			.navbar-brand {
+				width: 100%;
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-custom" aria-label="First navbar example" style="position: fixed top:0;">
+		<main>
+			<h2 class="navbar-brand" href="#" >TAMU ECEN CAPSTONE PROJECT MANAGER</h2>
+
+
+			<div class="container-fluid">	
+				<div class="p-5 mb-4 bg-light rounded-3">
+					<div class="container-fluid py-1">
+						
+						<h1 class="display-5 fw-bold" style="text-align:center;">Project Submission Form</h1>
+						<p class="col-md-6 fs-2" style="text-align:center; margin: 0 auto;">Please provide a brief description of the project and the skills needed for each position down below. </p>
+						
+                        <form action="send_proj.php" method="POST" style="color: black;">
+                            Project Description:
+                            <br>
+                             <textarea rows = "3" cols= "60" name = "project description" style="margin-bottom: 2.5%;">
+                                 Enter Description here...
+                             </textarea><br>
+                             
+                             <h1 class="display-5 fw-bold" style="text-align: left; color: rgb(0, 0, 0); margin-bottom: 2.5%;" > Position 1
+                            </h1>
+                
+                        
+                            <input type="text" name="role name1" placeholder="Role name" maxlength="50" size="50"><br>
+                            
+
+                        
+                
+                        
+                        
+                                
+                              
+                        </form>
+
+					</div>
+				</div>
+            </div>  
+
+            
+            
+
+
+
+
+
+
+			
+
+
+		</main>
+
+
+</body>
+
+</html>
